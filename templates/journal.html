@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mindful Path - Journal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Mindful Path</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/journal/">Journal</a> |
+            <a href="/archive/">Journal Archives</a> |
+            <a href="/api/entries/export" download="">Export Entries</a>
+        </nav>
+
+        <h2>Journal Your Thoughts</h2>
+
+        <div id="quote-component" class="quote-container">
+            <!-- Quote will be dynamically loaded here -->
+            <p>Loading your daily Stoic quote...</p>
+        </div>
+        
+
+        <!-- Journal Form -->
+        <form id="journal-form">
+            <label for="question1">What did you do well today?</label>
+            <textarea id="question1" name="question1" required></textarea>
+
+            <label for="question2">What did you do poorly?</label>
+            <textarea id="question2" name="question2" required></textarea>
+
+            <label for="question3">What should you do to become a better version of yourself?</label>
+            <textarea id="question3" name="question3" required></textarea>
+
+            <button type="submit">Save Entry</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

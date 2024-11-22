@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journal Archives</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Mindful Path</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/journal/">Journal</a> |
+            <a href="/archive/">Journal Archives</a> |
+            <a href="/api/entries/export" download="">Export Entries</a>
+        </nav>
+    <h1>Journal Archives</h1>
+
+    <div id="entries-list">
+        {% for entry in entries %}
+        <a href="{{ url_for('entry', date=entry) }}">{{ entry }}</a><br>
+        {% endfor %}
+    </div>
+    
+</div>
+</body>
+</html>

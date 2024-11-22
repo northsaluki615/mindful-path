@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journal Entry for {{ date }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Mindful Path</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/journal/">Journal</a> |
+            <a href="/archive/">Journal Archives</a> |
+            <a href="/api/entries/export" download="">Export Entries</a>
+        </nav>
+        <div id="entry-content">
+            {{ content|safe }}
+        </div>
+    </div>
+</body>
+</html>

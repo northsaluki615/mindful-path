@@ -1,0 +1,256 @@
+/* src/assets/styles.css */
+
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply color palette */
+:root {
+  --middle-purple: #cb8eb0;
+  --pastel-gray: #d1cfb9;
+  --tuscany: #b89d92;
+  --cinereous: #5c4b47; /* Darker shade for better readability */
+  --chinese-blue: #3c579e;
+  --copper-rose: #9e6463;
+}
+
+/* Set global font and background */
+body {
+  font-family: 'TT2020', sans-serif;
+  background-color: var(--pastel-gray);
+  color: var(--cinereous); /* Darker color for improved readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Centered app container */
+.app-container {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header and subheader styles */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--middle-purple);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--cinereous); /* Darker subheader color */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style the date input with a smaller width */
+input[type='date'] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--tuscany);
+  font-size: 1em;
+  color: var(--cinereous);
+  background-color: #fff;
+  width: auto; /* Set width to auto */
+  max-width: 200px; /* Maximum width for date input */
+  margin: 0 auto; /* Center the date input */
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--tuscany);
+  font-size: 1em;
+  width: 100%;
+  max-width: 100%;
+  color: var(--cinereous);
+  background-color: #fff;
+}
+
+button {
+  background-color: var(--chinese-blue);
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--copper-rose);
+}
+
+/* Apply color to links or action items if needed */
+a {
+  color: var(--middle-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--copper-rose);
+}
+
+/* Font-face definitions with updated paths */
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020Base-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020Base-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleB-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleB-Italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleD-Regular.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleD-Italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleE-Italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleF-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleF-Regular-ASCII.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleG-Regular.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('/static/fonts/TT2020StyleG-Regular-ASCII.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Apply the TT2020 font family as the default */
+body {
+  font-family: 'TT2020', sans-serif;
+}
+
+/* Apply the font to all elements */
+* {
+  font-family: 'TT2020', sans-serif;
+}
+
+/* Navigation styling */
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: var(--middle-purple);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--copper-rose);
+}
+
+/* Quote component styling */
+.quote-container {
+  font-style: italic;
+  color: var(--cinereous);
+  margin-bottom: 20px;
+}
+
+.quote-container blockquote {
+  margin: 0;
+}
+
+.quote-container cite {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: var(--middle-purple);
+}
+
+#entries-list {
+  list-style: none; /* Removes the bullets */
+  padding: 0; /* Removes extra padding around the list */
+  margin: 0; /* Removes any margin */
+}
+
+#entries-list a {
+  text-decoration: none; /* Removes underlines */
+  color: var(--middle-purple); /* Applies your color palette */
+  font-size: 1.1em;
+  display: block; /* Ensures links are on their own line */
+  margin-bottom: 10px; /* Adds spacing between links */
+}
+
+#entries-list a:hover {
+  color: var(--copper-rose); /* Changes color on hover */
+}
