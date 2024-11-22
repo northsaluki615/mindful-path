@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mindful Path - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 </head>
@@ -15,13 +16,29 @@
             <a href="/archive/">Journal Archives</a> |
             <a href="/api/entries/export" download="">Export Entries</a>
         </nav>
-        <h4><blockquote>Don’t go to bed and close your sleepy eyes until you have assessed your daytime deeds. Where did I go wrong? What did I do? What’s been left undone? From first to last review the day appreciating what you did well yet urge yourself to do better tomorrow on those things that went poorly.</blockquote>
-                    <cite>— Epictetus: Key Discourses</cite>
-        </h4>
-                    <p>
-
-        </p>
-
+        <section class="quote-section">
+            <blockquote>
+                Don’t go to bed and close your sleepy eyes until you have assessed your daytime deeds. Where did I go wrong? What did I do? What’s been left undone? From first to last review the day appreciating what you did well yet urge yourself to do better tomorrow on those things that went poorly.
+            </blockquote>
+            <cite>— Epictetus: Key Discourses</cite>
+        </section>
+        <section class="journal-intro">
+            <p>
+                When I deployed with the Army in 2020, my father, Pat Helmers, gave me a journal. Inside was a page with instructions on how to journal like a stoic:
+            </p>
+            <p>Review the day 3 times, beginning to end:</p>
+            <ol>
+                <li>What did you do well today?</li>
+                <li>What did you do poorly?</li>
+                <li>What should I do to become a better version of myself?</li>
+            </ol>
+            <p>
+                I took this and ran with it. Here's an app to help journalling from your keyboard.
+            </p>
+            <p>
+                <a href="/journal/" class="button">Begin your Stoic Journal here</a>
+            </p>
+        </section>
     </div>
 </body>
 </html>

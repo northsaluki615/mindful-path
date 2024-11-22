@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020Base-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020Base-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleB-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleB-Italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleD-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleD-Italic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleE-Italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleF-Regular.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleF-Regular-ASCII.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleG-Regular.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT2020';
+    src: url('/static/fonts/TT2020StyleG-Regular-ASCII.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
